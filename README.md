@@ -1,3 +1,4 @@
+https://leetcode.com/problems/median-of-two-sorted-arrays/
 Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 
 The overall run time complexity should be O(log (m+n)).
@@ -34,3 +35,8 @@ nums2.length == n
 0 <= n <= 1000
 1 <= m + n <= 2000
 -106 <= nums1[i], nums2[i] <= 106
+
+Success
+Details 
+Runtime: 88 ms, faster than 82.00% of Python3 online submissions for Median of Two Sorted Arrays.
+Memory Usage: 14.4 MB, less than 78.26% of Python3 online submissions for Median of Two Sorted Arrays.
