@@ -14,14 +14,17 @@ class Solution:
         else:
             while(i<len_s):
                 j=i+1
-                while(j<=len_s):
-                    sub_str=s[i:j]
-                    len_sub_str=len(sub_str)
-                    if self.__is_string_unique(sub_str):
-                        if len_sub_str>max_len:
-                            max_len=len_sub_str
-                    else:
+                sub_str = {s[i]}
+                sub_str_len=1
+                while(j<len_s):
+                    c = s[j]
+                    if c in sub_str:
                         break
-                    j+=1
+                    else:
+                        sub_str.add(s[j])
+                        sub_str_len+=1
+                        j+=1
+                if sub_str_len>max_len:
+                    max_len=sub_str_len
                 i+=1
             return max_len
